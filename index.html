@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Styles | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Alex Styles</h1>
+    <p>Graphic Designer | Creative Thinker | Visual Storyteller</p>
+    <!-- Navigation with tooltips -->
+    <nav>
+      <a href="#about" data-tooltip="Learn more about Alex">About</a>
+      <a href="#portfolio" data-tooltip="See creative work">Portfolio</a>
+      <a href="#contact" data-tooltip="Get in touch">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Alex Styles, a passionate graphic designer who loves creating
+      visually compelling stories through design.
+    </p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1" class="responsive-img">
+      <button class="btn">View Details</button>
+    </div>
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2" class="responsive-img">
+      <button class="btn">View Details</button>
+    </div>
+  </section>
+
+  <!-- Modal (hidden by default) -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Project Title</h2>
+      <p>Detailed description of the project goes here...</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Alex Styles. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for modal -->
+  <script src="script.js"></script>
+</body>
+</html>
